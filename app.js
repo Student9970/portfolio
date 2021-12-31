@@ -1,56 +1,9 @@
-// console.log("Hey there"); //js print statement
-/*
-var a;
-a = 1;
-let b = 2; // always use this type of var
-const PI = 22 / 7;
-*/
-
-/*
-let arr = [1, 2, 3, 4, 5];
-console.log(arr);
-arr.push(8);
-console.log(arr);
-*/
-
-/*
-for (let i = 0; i < 5; i++) {
-    
-}
-*/
-/*
-let i = 5;
-while (i < 8) {
-    console.log("Hey");
-    i++;
-}
-*/
-/*
-function namein() {
-    console.log("I am from name in");
-}
-
-var nameout = () => {
-    console.log("I am arrow function");
-}*/
-
-/*
-var obj = {
-    "name": "Aalain",
-    "Age": 19,
-    "Profession": "Software Engineer"
-}*/
-
-// DOM (Document Object Model)
-
 let namein = () => {
     document.querySelector("img").style.cssText = `transform: rotate(450deg); transition: 0.5s;`;
     let arr = ["#projects", "#about", "#github", "#copy", "#theme"];
     for (let i = 0; i < 5; i++) {
         document.querySelector(arr[i]).style.cssText = `opacity:0; transition: 0.5s;`;
     }
-    document.querySelector(".main").style.cssText = `background-size:110%;
-    transition: 0.5s;`;
 }
 
 let nameout = () => {
@@ -60,9 +13,6 @@ let nameout = () => {
     for (let i = 0; i < 5; i++) {
         document.querySelector(arr[i]).style.cssText = `opacity:1; transition: 0.5s;`;
     }
-    document.querySelector(".main").style.cssText = `
-    background-size: cover;
-    transition: 0.5s;`;
 }
 
 let darkMode = () => {
@@ -92,8 +42,6 @@ let lightMode = () => {
     }
     document.querySelector("#name").style.cssText = "color: black !important;"
 }
-
-
 
 let projectin = () => {
     document.querySelector("#projects").style.cssText = `color: red !important; transition: 0.5s;`;

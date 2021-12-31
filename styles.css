@@ -38,3 +38,17 @@ a {
 ::-webkit-scrollbar {
     display: none;
 }
+
+
+/* Projects CSS */
+
+.pro {
+    height: 200px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: rgb(251, 255, 197);
+}
+
+.pro-cont {
+    margin-top: 20px;
+}
