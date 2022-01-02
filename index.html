@@ -14,9 +14,23 @@
     <title>Usama Ansari | Full Stack Web Developer</title>
 </head>
 
-<body>
+<body onload="loading();">
 
-    <div class="loading"></div>
+    <div class="loading">
+
+        <div class="images">
+            <img src="./images/pose_m6-t-1.png" alt="Person with coffe and tablet" class="myimg">
+
+            <img src="./images/pose_m5-t.png" alt="Person with coffe and tablet" class="myimg">
+
+            <img src="./images/pose_m6-t-1.png" alt="Person with coffe and tablet" class="myimg">
+
+            <img src="./images/pose_m5-t.png" alt="Person with coffe and tablet" class="myimg">
+        </div>
+        <h3 class="my-5" style="color: white;">Hold on a sec!
+        </h3>
+
+    </div>
 
     <div class="main">
 
@@ -30,7 +44,7 @@
                 <a class="navbar-brand" href="#" id="name" onmouseover="namein();" onmouseout="nameout();">USAMA ANSARI</a>
 
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href=" " id="about" onmouseover="aboutin();" onmouseout="aboutout();">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html" id="about" onmouseover="aboutin();" onmouseout="aboutout();">About</a></li>
                 </ul>
             </div>
         </nav>
@@ -47,10 +61,10 @@
             <div class="container-fluid">
 
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href=" " id="github" onmouseover="gitin();" onmouseout="gitout();">Github</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://github.com/Student9970?tab=repositories" target="_blank" id="github" onmouseover="gitin();" onmouseout="gitout();">Github</a></li>
                 </ul>
 
-                <div id="theme" onmouseover="darkMode();" onmouseout="lightMode();"></div>
+                <div id="theme" onmouseover="lightMode();" onmouseout="darkMode();"></div>
 
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href=" " id="copy" onmouseover="copyin();" onmouseout="copyout();">Copyright</a></li>

@@ -1,3 +1,43 @@
+.loading {
+    position: absolute;
+    z-index: 1000;
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.images {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+    box-shadow: 0px 0px 100px aliceblue;
+}
+
+.loading .images img {
+    height: 80%;
+    width: auto;
+    animation: 5s ltr ease-in-out infinite;
+}
+
+@keyframes ltr {
+    0% {
+        transform: translateX(180px);
+    }
+    100% {
+        transform: translateX(-280px);
+    }
+}
+
 .myimage {
     height: 80vh;
     width: max-content;
@@ -15,24 +55,32 @@
     height: 25px;
     width: 25px;
     border-radius: 50%;
-    background-color: black;
+    background-color: white;
+}
+
+#theme:hover {
+    cursor: pointer;
 }
 
 .main {
     height: 100vh;
-    background: url("./images/white.png");
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
     background-position: center;
     background-size: cover;
 }
 
 a {
-    color: rgba(0, 0, 0, 0.5) !important;
+    color: rgba(225, 225, 225, 0.5) !important;
 }
 
 #name {
     font-size: 40px;
     font-weight: bold;
-    color: rgba(0, 0, 0, 1) !important;
+    color: white !important;
+}
+
+#name:hover {
+    text-shadow: 0 0 15px white;
 }
 
 ::-webkit-scrollbar {
@@ -42,13 +90,122 @@ a {
 
 /* Projects CSS */
 
-.pro {
-    height: 200px;
-    width: 100%;
+.sites {
+    height: 80vh;
+    width: 100vw;
     border-radius: 20px;
-    background-color: rgb(251, 255, 197);
+    margin-top: 10%;
+}
+
+.allsites {
+    display: flex;
+    flex-direction: column;
+}
+
+.prev,
+.next {
+    position: absolute;
+    height: 100%;
+    width: 15%;
+}
+
+.prev {
+    left: 0;
+    z-index: -1;
+}
+
+.next {
+    right: 0;
+    z-index: -1;
+}
+
+
+/* Arrow */
+
+.arrow {
+    display: inline-flexbox;
+}
+
+.up,
+.down {
+    height: 10px;
+    width: 50px;
+    background-color: yellow;
+}
+
+.up {
+    transform: rotate(-45deg);
+}
+
+.down {
+    transform: rotate(45deg);
+}
+
+
+/* Arrow */
+
+
+/* Project Link */
+
+.project-back {
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)) !important;
 }
 
 .pro-cont {
-    margin-top: 20px;
+    height: 80vh;
+    width: 80vw;
+    border-radius: 20px;
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.1));
+    backdrop-filter: blur(10px);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ABOUT CSS */
+
+.p1 {
+    height: 60vh;
+    color: white;
+}
+
+.p1 h1 {
+    font-size: 4vw;
+}
+
+.p1 p {
+    font-weight: 100;
+    font-size: 2vw;
+}
+
+.p1 img {
+    width: 100%;
+}
+
+.p1-1 {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.p2 {
+    color: white;
+}
+
+.p2-1 {
+    height: 50vh;
+}
+
+.p2-1 ul {
+    list-style: none;
+    font-weight: 100;
+    font-size: 2vw;
+}
+
+.p2 img {
+    height: 100%;
 }

@@ -16,10 +16,10 @@ let nameout = () => {
 }
 
 let darkMode = () => {
-    document.querySelector("img").style.cssText = `transform: rotate(270deg);
+    document.querySelector("img").style.cssText = `transform: rotate(90deg);
     transition: 0.5s;`;
-    document.querySelector("#theme").style.cssText = `background-color: white; transition: 0.5s;`;
-    document.querySelector(".main").style.cssText = `background:url("./images/dark.png"); background-position: center;
+    document.querySelector("#theme").style.cssText = `background-color:white;`;
+    document.querySelector(".main").style.cssText = `background:linear-gradient(to bottom right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)); background-position: center;
     background-size: cover;
     transition: 0.5s;`;
     let arr = ["#projects", "#about", "#github", "#copy"];
@@ -30,10 +30,10 @@ let darkMode = () => {
 }
 
 let lightMode = () => {
-    document.querySelector("img").style.cssText = `transform: rotate(90deg);
+    document.querySelector("img").style.cssText = `transform: rotate(270deg);
     transition: 0.5s;`;
-    document.querySelector("#theme").style.cssText = `background-color: black; transition: 0.5s;`;
-    document.querySelector(".main").style.cssText = `background:url("./images/white.png"); background-position: center;
+    document.querySelector("#theme").style.cssText = `background-color:black;`;
+    document.querySelector(".main").style.cssText = `background:linear-gradient(to bottom right, rgb(230, 230, 230) 30%, rgba(0, 0, 0, 1) 200%); background-position: center;
     background-size: cover;
     transition: 0.5s;`;
     let arr = ["#projects", "#about", "#github", "#copy"];
@@ -50,7 +50,7 @@ let projectin = () => {
 }
 
 let projectout = () => {
-    document.querySelector("#projects").style.cssText = `color: rgba(0,0,0,0.5) !important; transition: 0.5s;`;
+    document.querySelector("#projects").style.cssText = `color: rgba(225, 225, 225, 0.5) !important; transition: 0.5s;`;
     document.querySelector("img").style.cssText = `transform: rotate(90deg); transition: 0.5s;`;
 }
 
@@ -61,7 +61,7 @@ let aboutin = () => {
 }
 
 let aboutout = () => {
-    document.querySelector("#about").style.cssText = `color: rgba(0,0,0,0.5) !important; transition: 0.5s;`;
+    document.querySelector("#about").style.cssText = `color: rgba(225, 225, 225, 0.5) !important; transition: 0.5s;`;
     document.querySelector("img").style.cssText = `transform: rotate(90deg); transition: 0.5s;`;
 }
 
@@ -72,7 +72,7 @@ let gitin = () => {
 }
 
 let gitout = () => {
-    document.querySelector("#github").style.cssText = `color: rgba(0,0,0,0.5) !important; transition: 0.5s;`;
+    document.querySelector("#github").style.cssText = `color: rgba(225, 225, 225, 0.5) !important; transition: 0.5s;`;
     document.querySelector("img").style.cssText = `transform: rotate(90deg); transition: 0.5s;`;
 }
 
@@ -83,6 +83,12 @@ let copyin = () => {
 }
 
 let copyout = () => {
-    document.querySelector("#copy").style.cssText = `color: rgba(0,0,0,0.5) !important; transition: 0.5s;`;
+    document.querySelector("#copy").style.cssText = `color: rgba(225, 225, 225, 0.5) !important; transition: 0.5s;`;
     document.querySelector("img").style.cssText = `transform: rotate(90deg); transition: 0.5s;`;
+}
+
+let loading = () => {
+    setTimeout(() => {
+        document.querySelector('.loading').remove();
+    }, 9000);
 }
